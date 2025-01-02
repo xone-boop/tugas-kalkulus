@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Posisi lebih ke atas */
+    height: 100vh;
+    margin: 0;
+    padding-top: 20px; /* Jarak dari atas */
+}
+
+.calculator {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 800px; /* Lebar ditingkatkan untuk menampung dua kolom */
+    margin-top: 20px; /* Jarak dari atas */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-group.upper,
+.form-group.lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.sigma-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.sigma-logo {
+    font-size: 3em;
+    margin: 10px;
+    align-self: center;
+}
+
+.form-group.middle {
+    flex-direction: row;
+}
+
+.results-container {
+    display: flex;
+    justify-content: space-between; /* Menampilkan hasil dan langkah-langkah di sebelah kiri dan kanan */
+    margin-top: 20px;
+}
+
+.result, .steps {
+    flex: 1;
+    margin: 0 10px;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.steps {
+    background-color: #f9f9f9;
+}
+
+.result table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result table, .result th, .result td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.result th {
+    background-color: #f2f2f2;
+}

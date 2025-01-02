@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Sigma Calculator</h1>
+        <form id="sigmaForm">
+            <div class="form-group upper">
+                <input type="number" id="upperLimit" placeholder="Upper Limit (n)" required>
+            </div>
+            <div class="sigma-container">
+                <div class="sigma-logo">Σ</div>
+                <div class="form-group middle">
+                    <input type="text" id="expression" placeholder="Expression (in terms of k)" required>
+                </div>
+            </div>
+            <div class="form-group lower">
+                <input type="number" id="lowerLimit" placeholder="Lower Limit (k)" required>
+            </div>
+        </form>
+        <div class="results-container">
+            <div class="result" id="result">
+                <strong>Result:</strong>
+                <table id="resultTable">
+                    <!-- Tabel hasil -->
+                </table>
+            </div>
+            <div class="steps" id="steps">
+                <strong>Steps:</strong>
+                <!-- Langkah-langkah perhitungan -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
